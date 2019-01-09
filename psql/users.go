@@ -29,7 +29,7 @@ type UserStore struct {
 	}
 }
 
-// Find will retrieve a user with the provided ID or return ErrNotFount
+// Find will retrieve a user with the provided ID or return ErrNotFound
 // if the user isn't located. Other errors are wrapped with context
 // but are otherwise wrapped as-is.
 func (us *UserStore) Find(id int) (*User, error) {
